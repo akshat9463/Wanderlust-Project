@@ -91,7 +91,7 @@ app.use("/", userRouter);
 
 
 app.get("/", (req, res, next) => {
-  next(new ExpressError(404, "page not found"));
+  next(new ExpressError(404, "Welcome To WanderLust"));
 });
 
 
