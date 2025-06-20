@@ -92,7 +92,8 @@ app.use("/", userRouter);
 
 app.get("/", (req, res, next) => {
   // next(new ExpressError(404, "Welcome To WanderLust"));
-  req.flash("success","&#x2705; Welcome to WanderLust");
+  // req.flash("success","&#x2705; Welcome to WanderLust");
+  res.render("./listings/welcome.ejs");
 });
 
 
