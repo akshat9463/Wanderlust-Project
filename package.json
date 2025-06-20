@@ -1,6 +1,6 @@
 {
-  "engines":{ 
-    "node":"22.14.0"
+  "engines": {
+    "node": "22.14.0"
   },
   "name": "airbnb-clone",
   "version": "1.0.0",
@@ -13,7 +13,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "cloudinary": "^2.6.1",
+    "cloudinary": "^1.41.3",
     "connect-flash": "^0.1.1",
     "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
