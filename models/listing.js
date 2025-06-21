@@ -38,6 +38,7 @@ const listingSchema = new Schema({
   }
 });
 
+// for deleting reviews when related post is deleted.
 listingSchema.post("findOneAndDelete", async (listing)=>{
   if(listing){
     await Review.deleteMany({_id: {$in: listing.reviews}});
