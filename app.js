@@ -88,14 +88,14 @@ app.use((req,res,next)=>{
   next();
 });
 
-app.get("/user", async (req,res)=>{
-  let fakeUser = new User({
-    email: "akshat@gmail.com",
-    username:"delta-student",
-  });
-  let registeredUser = await User.register(fakeUser,"hello");
-  res.send(registeredUser);
-});
+// app.get("/user", async (req,res)=>{
+//   let fakeUser = new User({
+//     email: "akshat@gmail.com",
+//     username:"delta-student",
+//   });
+//   let registeredUser = await User.register(fakeUser,"hello");
+//   res.send(registeredUser);
+// });
 
 app.use("/listing", listing);
 app.use("/listing/:id/review" , review);
